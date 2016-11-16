@@ -1,22 +1,27 @@
 (function(){
-  'use strictr';
-  angular.module('LunchCheck',[])
-  .controller('LunchCheckController', LunchCheckController);
+	'use strictr';
+	angular.module('LunchCheck',[]);
+	.controller('LunchCheckController', LunchCheckController);
 
-  LunchCheckController.$inject = ['$scope'];
-  function CountItem($scope){
-  
-    var item = "";
-    if(item <= 3){
-      $scope.message = "Enjoy!";
-    }else if(item = 0){
-      $scope.message = "Please enter data first!";
-    }else{
-      $scope.message = "Too much!";
-    }
+	LunchCheckController.$inject = ['$scope'];
+	
+	function LunchCheckController($scope){
+		var str ="";
+		var re = /\s*,\s*/
+		var splits = str.split(re);
+
+		$scope.item = "";
+		if(item <= 3){
+			$scope.message = "Enjoy!";
+			item++;
+		}else if(item = 0){
+			$scope.message = "Please enter data first!";
+		}else{
+			$scope.message = "Too much!";
+		}
 
 
-  }
+	}
 
 
 })();
