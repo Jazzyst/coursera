@@ -1,12 +1,14 @@
 (function(){
-	'use strictr';
+	'use strict';
 	angular.module('LunchCheck',[]);
 	.controller('LunchCheckController', LunchCheckController);
 
 	LunchCheckController.$inject = ['$scope'];
 	
 	function LunchCheckController($scope){
-		var str ="";
+
+		function CheckCountWord($scope){
+			var str ="";
 		var re = /\s*,\s*/
 		var splits = str.split(re);
 
@@ -19,6 +21,8 @@
 		}else{
 			$scope.message = "Too much!";
 		}
+		}
+		
 
 
 	}
