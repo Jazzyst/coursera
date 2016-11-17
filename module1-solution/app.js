@@ -7,10 +7,10 @@
 	LunchCheckController.$inject = ['$scope'];
 	
 	function LunchCheckController($scope){
-
+		$scope.str;
 		$scope.CheckCountWord = function(){
 			console.log("CheckCountWord запускается");
-		$scope.str = "";
+		
 		var arr = str.split(', ');
 		var i = 0;
 		if(arr.length < 3){
