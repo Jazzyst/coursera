@@ -8,7 +8,7 @@
 	
 	function LunchCheckController($scope){
 
-		function CheckCountWord($scope){
+		$scope.CheckCountWord = function(){
 			console.log("CheckCountWord запускается");
 		var str ="";
 		var arr = str.split(', ');
