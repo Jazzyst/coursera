@@ -12,14 +12,16 @@
 			console.log("CheckCountWord запускается");
 		
 		var arr = $scope.str.split(', ');
-		var i = 0;
+		console.log(arr);
+    console.log(arr.length);
+		
 		if(arr.length < 3){
-			i++;
+			
 			$scope.message = "Enjoy!";
 			
 		}else if(arr.length > 3){
 			$scope.message = "Too much!";
-		}else if(arr.length = NaN){
+		}else if(arr.length = 0){
 			$scope.message = "Please enter data first!";
 		}
 		}
