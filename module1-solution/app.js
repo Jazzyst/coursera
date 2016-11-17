@@ -9,18 +9,18 @@
 	function LunchCheckController($scope){
 
 		function CheckCountWord($scope){
-			var str ="";
-		var re = /\s*,\s*/
-		var splits = str.split(re);
-
-		$scope.item = "";
-		if(item <= 3){
+			console.log("CheckCountWord запускается");
+		var str ="";
+		var arr = str.split(', ');
+		var i = 0;
+		if(arr.length < 3){
+			i++;
 			$scope.message = "Enjoy!";
-			item++;
-		}else if(item = 0){
-			$scope.message = "Please enter data first!";
-		}else{
+			
+		}else if(arr.length > 3){
 			$scope.message = "Too much!";
+		}else if(arr.length = NaN){
+			$scope.message = "Please enter data first!";
 		}
 		}
 		
