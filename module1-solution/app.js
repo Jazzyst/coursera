@@ -10,7 +10,7 @@
 
 		$scope.CheckCountWord = function(){
 			console.log("CheckCountWord запускается");
-		var str ="";
+		$scope.str = "";
 		var arr = str.split(', ');
 		var i = 0;
 		if(arr.length < 3){
