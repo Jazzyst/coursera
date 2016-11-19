@@ -7,7 +7,7 @@
 	LunchCheckController.$inject = ['$scope'];
 	
 	function LunchCheckController($scope){
-		$scope.str;
+		$scope.str = "";
 		$scope.CheckCountWord = function(){
 			console.log("CheckCountWord запускается");
 		
@@ -21,7 +21,7 @@
 			
 		}else if(arr.length > 3){
 			$scope.message = "Too much!";
-		}else if(arr.length = 0){
+		}else if(arr.length == 0){
 			$scope.message = "Please enter data first!";
 		}
 		}
