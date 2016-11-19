@@ -15,7 +15,7 @@
 		console.log(arr);
     console.log(arr.length);
 		
-		if(arr.length == 0){
+		if(str.length === 0){
 			$scope.message = "Please enter data first!";
 		}else	if(arr.length <= 3 && arr.length > 0){
 			$scope.message = "Enjoy!";
