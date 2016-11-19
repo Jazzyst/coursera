@@ -11,7 +11,7 @@
 		$scope.CheckCountWord = function(){
 			console.log("CheckCountWord запускается");
 		
-		var arr = $scope.str.split(', ');
+		var arr = $scope.str.split(',');
 		console.log(arr);
     console.log(arr.length);
 		
