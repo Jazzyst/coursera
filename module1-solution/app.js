@@ -15,14 +15,13 @@
 		console.log(arr);
     console.log(arr.length);
 		
-		if(arr.length < 3){
-			
-			$scope.message = "Enjoy!";
-			
-		}else if(arr.length > 3){
-			$scope.message = "Too much!";
-		}else if(arr.length == 0){
+		if(arr.length == 0){
 			$scope.message = "Please enter data first!";
+		}else	if(arr.length <= 3 && arr.length > 0){
+			$scope.message = "Enjoy!";
+		}else {
+			$scope.message = "Too much!";
+		
 		}
 		}
 		
